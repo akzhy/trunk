@@ -4,6 +4,8 @@
 
 # Trunk
 
+![](https://img.shields.io/badge/trunk.css-1.0.0-brightgreen.svg) ![](https://img.shields.io/badge/License-MIT-blue.svg) ![](https://img.shields.io/badge/size-~4kB-9c27b0.svg)
+
 [Webpage](http://akzhy.com/shelf/trunk) | [Demo page](http://trunk.akzhy.com/)
 
 Trunk is a lightweight css framework that aims to achieve responsive grid layout. Trunk follows the same method as that of materialize to achieve this.
