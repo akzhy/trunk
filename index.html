@@ -1,0 +1,338 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Trunk.css</title>
+		<link href="trunk.png" type="image/png" rel="icon"/>
+		<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto+Slab" rel="stylesheet">
+        <link href="dist/trunk.min.css" type="text/css" rel="stylesheet"/>
+        <!--<link rel="stylesheet/less" type="text/css" href="src/trunk.less">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>-->
+		<style>
+			body {
+				font-family: 'Roboto Slab', serif;
+			}
+			h1,h2,h3,h4,h5,h6 {
+				font-family: 'Fredoka One', cursive;
+				font-weight: normal;
+				color: #333;
+			}
+			a {
+				display: inline-block;
+			}
+			p {
+				margin: 10px 0;
+				color: #444;
+			}
+			.title {
+				text-align: center;
+			}
+			.title,.contents {
+				padding: 30px 0;
+			}
+			.title h1,h2{
+				margin-bottom: 30px;
+			}
+			.btn {
+				letter-spacing: 1px;
+				margin: 10px 0;
+			}
+			.github svg {
+				display: inline-block;
+				margin-bottom: -2px;
+				margin-right: 8px;
+			}
+			.properties{
+				padding: 30px 0;
+				text-align: center;
+			}
+			.properties .col {
+				padding: 10px;
+			}
+			.properties .col .box{
+				border: 1px solid #dcdcdc;
+				padding: 20px;
+				height: 100%;
+			}
+			.properties .description{
+				color: #888;
+			}
+			pre{
+				margin: 20px 0;
+			}
+			pre code{
+				display: inline-block;
+				width: 100%;
+				padding: 10px;
+				background: #eee;
+				border-radius: 5px;
+			}
+            code{
+                display: inline-block;
+                padding: 5px 8px;
+                border-radius: 5px;
+                background: #eee;
+                overflow: auto;
+                vertical-align: middle;
+            }
+			.divider{
+				width: 90%;
+				height: 1px;
+				background: #dcdcdc;
+				margin: 20px auto;
+			}
+            table{
+                border-collapse: collapse;
+                min-width: 50%;
+                margin: 20px 0;
+            }
+            table th,table td{
+                padding: 10px;
+                border: 1px solid #dcdcdc;
+            }
+            .demo{
+                padding: 20px 0;
+            }
+            .demo1 .col{
+                padding: 10px;
+            }
+            ul{
+                list-style: none;
+            }
+            ul li{
+                margin: 10px;
+            }
+            form .btn{
+                margin-left: 10px;
+            }
+			.text-center{
+				text-align: center;
+			}
+		</style>
+    </head>
+    <body>
+		<div class="container">
+			<div class="title">
+				<p class="text-center"><img src="trunk.png" width="50" alt=""/>
+				<h1>Trunk.css</h1>
+				<p>Trunk.css is a lightweight framework that provides a basic grid system based on <a href="https://materializecss.com" target="_blank">Materialize</a>.</p>
+				<p><a href="https://github.com/akzhy/trunk/archive/master.zip" class="btn primary">DOWNLOAD</a> | <a href="https://github.com/akzhy/trunk" class="btn secondary github"><svg class="octicon octicon-mark-github v-align-middle" height="18" viewBox="0 0 16 16" version="1.1" width="18" aria-hidden="true"><path fill="#fff" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg><span>Github</span></a></p>
+			</div>
+			<div class="contents">
+				<div class="title">
+					<h2>What is it for ?</h2>
+					<p>Trunk is useful for projects that doesn't require larger frameworks and only requires a base file that includes a grid and the most basic stylings. Trunk is not for UI designing, it only provides the grid and a few custom styles.</p>
+				</div>
+				<div class="row flex properties">
+					<div class="col s12 m4">
+						<div class="box">
+							<svg class="svg-icon" width="50" height="50" viewBox="0 0 20 20">
+								<path fill="#444" d="M17.222,5.041l-4.443-4.414c-0.152-0.151-0.356-0.235-0.571-0.235h-8.86c-0.444,0-0.807,0.361-0.807,0.808v17.602c0,0.448,0.363,0.808,0.807,0.808h13.303c0.448,0,0.808-0.36,0.808-0.808V5.615C17.459,5.399,17.373,5.192,17.222,5.041zM15.843,17.993H4.157V2.007h7.72l3.966,3.942V17.993z"></path>
+								<path fill="#444" d="M5.112,7.3c0,0.446,0.363,0.808,0.808,0.808h8.077c0.445,0,0.808-0.361,0.808-0.808c0-0.447-0.363-0.808-0.808-0.808H5.92C5.475,6.492,5.112,6.853,5.112,7.3z"></path>
+								<path fill="#444" d="M5.92,5.331h4.342c0.445,0,0.808-0.361,0.808-0.808c0-0.446-0.363-0.808-0.808-0.808H5.92c-0.444,0-0.808,0.361-0.808,0.808C5.112,4.97,5.475,5.331,5.92,5.331z"></path>
+								<path fill="#444" d="M13.997,9.218H5.92c-0.444,0-0.808,0.361-0.808,0.808c0,0.446,0.363,0.808,0.808,0.808h8.077c0.445,0,0.808-0.361,0.808-0.808C14.805,9.58,14.442,9.218,13.997,9.218z"></path>
+								<path fill="#444" d="M13.997,11.944H5.92c-0.444,0-0.808,0.361-0.808,0.808c0,0.446,0.363,0.808,0.808,0.808h8.077c0.445,0,0.808-0.361,0.808-0.808C14.805,12.306,14.442,11.944,13.997,11.944z"></path>
+								<path fill="#444" d="M13.997,14.67H5.92c-0.444,0-0.808,0.361-0.808,0.808c0,0.447,0.363,0.808,0.808,0.808h8.077c0.445,0,0.808-0.361,0.808-0.808C14.805,15.032,14.442,14.67,13.997,14.67z"></path>
+							</svg>
+							<p class="property">Light Weight</p>
+							<p class="description">~4kb</p>
+						</div>
+					</div>
+					<div class="col s12 m4">
+						<div class="box">
+							<svg class="svg-icon" width="50" height="50" viewBox="0 0 20 20">
+								<path fill="#444" d="M10.185,1.417c-4.741,0-8.583,3.842-8.583,8.583c0,4.74,3.842,8.582,8.583,8.582S18.768,14.74,18.768,10C18.768,5.259,14.926,1.417,10.185,1.417 M10.185,17.68c-4.235,0-7.679-3.445-7.679-7.68c0-4.235,3.444-7.679,7.679-7.679S17.864,5.765,17.864,10C17.864,14.234,14.42,17.68,10.185,17.68 M10.824,10l2.842-2.844c0.178-0.176,0.178-0.46,0-0.637c-0.177-0.178-0.461-0.178-0.637,0l-2.844,2.841L7.341,6.52c-0.176-0.178-0.46-0.178-0.637,0c-0.178,0.176-0.178,0.461,0,0.637L9.546,10l-2.841,2.844c-0.178,0.176-0.178,0.461,0,0.637c0.178,0.178,0.459,0.178,0.637,0l2.844-2.841l2.844,2.841c0.178,0.178,0.459,0.178,0.637,0c0.178-0.176,0.178-0.461,0-0.637L10.824,10z"></path>
+							</svg>
+							<p class="property">Not for UI designing</p>
+						</div>
+					</div>
+					<div class="col s12 m4">
+						<div class="box">
+							<svg class="svg-icon" width="50" height="50" viewBox="0 0 20 20">
+								<path fill="#444" d="M19.404,6.65l-5.998-5.996c-0.292-0.292-0.765-0.292-1.056,0l-2.22,2.22l-8.311,8.313l-0.003,0.001v0.003l-0.161,0.161c-0.114,0.112-0.187,0.258-0.21,0.417l-1.059,7.051c-0.035,0.233,0.044,0.47,0.21,0.639c0.143,0.14,0.333,0.219,0.528,0.219c0.038,0,0.073-0.003,0.111-0.009l7.054-1.055c0.158-0.025,0.306-0.098,0.417-0.211l8.478-8.476l2.22-2.22C19.695,7.414,19.695,6.941,19.404,6.65z M8.341,16.656l-0.989-0.99l7.258-7.258l0.989,0.99L8.341,16.656z M2.332,15.919l0.411-2.748l4.143,4.143l-2.748,0.41L2.332,15.919z M13.554,7.351L6.296,14.61l-0.849-0.848l7.259-7.258l0.423,0.424L13.554,7.351zM10.658,4.457l0.992,0.99l-7.259,7.258L3.4,11.715L10.658,4.457z M16.656,8.342l-1.517-1.517V6.823h-0.003l-0.951-0.951l-2.471-2.471l1.164-1.164l4.942,4.94L16.656,8.342z"></path>
+							</svg>
+							<p class="property">Easily Customizable</p>
+							<p class="description">Includes .less files</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contents" id="usage">
+				<div class="title">
+					<h2>Usage</h2>
+				</div>
+				<p>Download the files from Github and include it as follows</p>
+				<pre><code>&lt;link href="dist/trunk.min.css" rel="stylesheet" type="text/css"/&gt;</code></pre>
+				<p>Or include from jsdelivr</p>
+				<pre><code>&lt;link href="dist/trunk.min.css" rel="stylesheet" type="text/css"/&gt;</code></pre>
+				<p>That's it now you can use all the functionalities of Trunk</p>
+				<div class="divider"></div>
+				<h3>Grid</h3>
+				<p>Grids are created in the same way as that of Materialize.css</p>
+				<p>A basic grid can be created as follows</p>
+				<pre><code>&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col s12 m6 l4 xl3"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<p>Trunk follows the 12 grid format, so the above code results in a div that is full width on smaller screens, half on medium devices, one third on large screens and one fourth on extra large devices</p>
+                Break points
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Device</th>
+                            <th>Screen Width</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Smaller Screens (s)</td>
+                            <td> <= 600px </td>
+                        </tr>
+                        <tr>
+                            <td>Medium Screens (m)</td>
+                            <td> <= 992px </td>
+                        </tr>
+                        <tr>
+                            <td>Large Screens (l)</td>
+                            <td> <= 1200px </td>
+                        </tr>
+                        <tr>
+                            <td>Extra Large Screens (xl)</td>
+                            <td> > 1200px </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><b>Equal height columns</b> can be created by adding the class <code>flex</code> to <code>.row</code></p>
+                <p>Code</p>
+                <pre><code>&lt;div class="container"&gt;
+    &lt;div class="row flex"&gt;
+        &lt;div class="col s12 m4"&gt;&lt;/div&gt;
+        &lt;div class="col s12 m4"&gt;&lt;/div&gt;
+        &lt;div class="col s12 m4"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <p>Live Demo</p>
+                <div class="row demo demo1 flex">
+                    <div class="col s12 m4" style="background: #ffcdd2;"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p></div>
+                    <div class="col s12 m4" style="background: #d1c4e9;"><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+                    <div class="col s12 m4" style="background: #c8e6c9;"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+                </div>
+                <div class="divider"></div>
+                <h3>Buttons</h3>
+                <p>Buttons can easily be created with the <code>btn</code> class. There are four different types of buttons, adding the <code>btn</code> class alone will produce the default style, other styles are <code>primary</code>, <code>secondary</code> and <code>danger</code></p>
+                <pre><code>&lt;button class="btn"&gt;Default Button&lt;/button&gt;
+&lt;button class="btn primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="btn secondary"&gt;Secondary Button&lt;/button&gt;
+&lt;button class="btn danger"&gt;Danger Button&lt;/button&gt;
+</code></pre>
+                <p>Live Demo</p>
+                <div class="demo demo2">
+                    <button class="btn">Default Button</button>
+                    <button class="btn primary">Primary Button</button>
+                    <button class="btn secondary">Secondary Button</button>
+                    <button class="btn danger">Danger Button</button>
+                </div>
+                <div class="divider"></div>
+                <h3>Forms</h3>
+                <p>All inputs are normalized and are given basic styles</p>
+                <pre><code>&lt;form&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col s12 m5"&gt;
+            &lt;label class="full-width"&gt;
+                &lt;span class="label-text"&gt;Name&lt;/span&gt;
+                &lt;input type="text" name="name" class="full-width"/&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col s12 m5"&gt;
+            &lt;label class="full-width"&gt;
+                &lt;span class="label-text"&gt;Email&lt;/span&gt;
+                &lt;input type="email" name="email" class="full-width"/&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col s12 m5"&gt;
+            &lt;label class="full-width"&gt;
+                &lt;span class="label-text"&gt;Select Option&lt;/span&gt;
+                &lt;select class="full-width"&gt;
+                    &lt;option selected&gt;Choose Option&lt;/option&gt;
+                    &lt;option&gt;Option 1&lt;/option&gt;
+                    &lt;option&gt;Option 2&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col s12 m5"&gt;
+            &lt;label class="full-width"&gt;
+                &lt;span class="label-text"&gt;Subject&lt;/span&gt;
+                &lt;input type="text" name="subject" class="full-width"/&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col s12 m10"&gt;
+            &lt;label class="full-width"&gt;
+                &lt;span class="label-text"&gt;Message&lt;/span&gt;
+                &lt;textarea name="message" class="full-width"&gt;&lt;/textarea&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col s12 m10"&gt;
+            &lt;button class="btn primary"&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                <div class="demo">
+                    <form>
+                        <div class="row">
+                            <div class="col s12 m5">
+                                <label class="full-width">
+                                    <span class="label-text">Name</span>
+                                    <input type="text" name="name" class="full-width"/>
+                                </label>
+                            </div>
+                            <div class="col s12 m5">
+                                <label class="full-width">
+                                    <span class="label-text">Email</span>
+                                    <input type="email" name="email" class="full-width"/>
+                                </label>
+                            </div>
+                            <div class="col s12 m5">
+                                <label class="full-width">
+                                    <span class="label-text">Select Option</span>
+                                    <select class="full-width">
+                                        <option selected>Choose Option</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col s12 m5">
+                                <label class="full-width">
+                                    <span class="label-text">Subject</span>
+                                    <input type="text" name="subject" class="full-width"/>
+                                </label>
+                            </div>
+                            <div class="col s12 m10">
+                                <label class="full-width">
+                                    <span class="label-text">Message</span>
+                                    <textarea name="message" class="full-width"></textarea>
+                                </label>
+                            </div>
+                            <div class="col s12 m10">
+                                <button class="btn primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="divider"></div>
+                <h3>Utility Classes</h3>
+                <p>There are a few utility classes, such as</p>
+                <ul>
+                    <li><code>.full-width</code> - For applying 100% width</li>
+                    <li><code>.hidden</code> - For applying display none</li>
+                    <li><code>.center</code> - On <code>.row.flex</code>, this will center the columns horizontally</li>
+                </ul>
+				<div class="divider"></div>
+				<p class="text-center"><a href="http://akzhy.com">akzhy</a> | <a href="https://github.com/akzhy/trunk/">Github</a> | <a href="http://akzhy.com/contact">Contact</a></p>
+			</div>
+		</div>
+    </body>
+</html>
